@@ -12,8 +12,8 @@ The idea is to use the impossibly small ESP32 based LilyGo T-Micro32 V2.0 module
 optional tethering between the halfs, used to transfer power during charging. Each half will show up as an individual
 keyboard via bluetooth.
 
-Note that normal keycaps does not fit on these switches, they bottom out too low, so we need
-to go with eg. XDA, DSA, or similar "lower" caps.
+Note that normal keycaps does not fit on these switches, they bottom out too low, so we need to go with DSA, or similar
+"lower" caps. If the plate is skipped, XDA could also fit.
 
 PCB can (soon) be found [here](https://github.com/Tubbles/kbdkid3-pcb).
 
