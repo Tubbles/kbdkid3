@@ -24,3 +24,12 @@ This sample can be found under :zephyr_file:`samples/bluetooth/peripheral_hids` 
 Zephyr tree.
 
 See :ref:`bluetooth samples section <bluetooth-samples>` for details.
+
+Flashing
+********
+
+``ZEPHYR_BASE=<path/to/zephyr> PATH=$ZEPHYR_BASE/scripts:$PATH west flash``
+
+Example:
+
+``ZEPHYR_BASE=~/dev/zephyr/zephyr/ PATH=$ZEPHYR_BASE/scripts:$PATH west flash``

@@ -63,7 +63,8 @@ static void disconnected(struct bt_conn *conn, uint8_t reason)
 	printk("Disconnected from %s (reason 0x%02x)\n", addr, reason);
 }
 
-static void security_changed(struct bt_conn *conn, bt_security_t level, enum bt_security_err err)
+static void security_changed(struct bt_conn *conn, bt_security_t level,
+			     enum bt_security_err err)
 {
 	char addr[BT_ADDR_LE_STR_LEN];
 
@@ -72,7 +73,8 @@ static void security_changed(struct bt_conn *conn, bt_security_t level, enum bt_
 	if (!err) {
 		printk("Security changed: %s level %u\n", addr, level);
 	} else {
-		printk("Security failed: %s level %u err %d\n", addr, level, err);
+		printk("Security failed: %s level %u err %d\n", addr, level,
+		       err);
 	}
 }
 
@@ -133,6 +135,8 @@ static struct bt_conn_auth_cb auth_cb_display = {
 void main(void)
 {
 	int err;
+
+	printk("KBDKID3\n");
 
 	err = bt_enable(bt_ready);
 	if (err) {
