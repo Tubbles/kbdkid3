@@ -3,6 +3,7 @@
 ![KBDKID3](img/kbdkid.png "KBDKID3")
 
 ## Info
+
 Since the second attempt failed miserably due to the stabilizer situation, I am now rethinking on how to best utilize my
 Kailh Choc V2 switches. My idea now is to go for an ortholinear setup in order to dodge the stabilizers alltogether. A
 split Ergodox EZ-like keyboard makes the most sense here. Although this probably still requires custom PCB and plate,
@@ -17,32 +18,46 @@ either, since the underside of the cap hits the skirt on the switch. There might
 as G20, but I haven't tried them out. On the other hand, if the plate is skipped, we could use XDA, where they barely
 fit under the thick sides of the cap.
 
+Features include wireless operation (maybe, hw prep), USB pass-through.
+
 PCB can (soon) be found [here](https://github.com/Tubbles/kbdkid3-pcb).
 
 ## BOM
+
 ### Case
-*
+
+* Plain PCB + rubber feet
+* Extra 3d-printed "ramp"
 
 ### PCB
-* Custom (hot swap?) split Ergodox EZ
+
+* Custom (hot swap?) split "Ergodox EZ"
+* ESP32-S3-WROOM-2-N32R8V based for USB-OTG and hardware prep for wireless operation
+* Hot swap sockets Mill-Max 7305 https://mou.sr/3NydSza
 
 ### Plate
+
 *
 
 ### Switch
+
 * Kailh Choc V2 Red https://kono.store/collections/switches/products/kailh-choc-mx-switches
 
 ### Stabs
+
 *
 
 ### Keycaps
+
 *
 
 ### Accessories
+
 * Lube
 
 ### Preliminary Components BOM
-* 2x LilyGo T-Micro32 V2.0
+
+* 2x ESP32-S3-WROOM-2-N32R8V
 * 2x Lipo batteries
 * 2x Lipo chargers (PD/QC?)
 * 4x USB-C ports (upstream + tether)
