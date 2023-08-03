@@ -1,0 +1,9 @@
+[manifest]
+path = .
+file = west.yml
+
+[zephyr]
+base = zephyr
+
+[build]
+board = ttgo_micro32_v2
